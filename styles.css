@@ -4,17 +4,43 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 15px 0px;
+    padding: 10px;
+    font-size:50px;
+    font-weight:200;
+    background-color: #32a86b
+    
+}
+
 body {
     background-color: burlywood;
-    display: grid;
-    grid-row: auto;
-    grid-column: 3fr;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
+div {
+    padding: 10px;
+    display: grid;
+}
+
+/* h4, p {
+    display: grid;
+    grid-column: 2;
+} */
+
+.cover {
+    max-width: 200rem;
+}
+
 footer {
+    height: 10vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: flex-end;
+    margin: 5px;
 }
