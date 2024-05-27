@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+@media (max-width="500px") {
+    body {
+        display: flex-column;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -22,11 +33,22 @@ body {
 
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
 div {
     padding: 10px;
     display: grid;
 }
 
+.book-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* h4, p {
     display: grid;
     grid-column: 2;
@@ -42,5 +64,6 @@ footer {
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: flex-end;
+    gap: 10px;
     margin: 5px;
 }
