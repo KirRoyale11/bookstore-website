@@ -1,69 +1,76 @@
+@media (width <= 600px) {
+    * {
+      display: flex;
+      flex-direction:column;
+    }
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@media (max-width="500px") {
-    body {
-        display: flex-column;
-    }
 
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-    }
+
+  .grid-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 15px 0px;
-    padding: 10px;
-    font-size:50px;
-    font-weight:200;
-    background-color: #32a86b
-    
+  display: flex;
+  /* flex-flow: row wrap; */
+  justify-content: center;
+  margin: 15px 0px;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 200;
+  background-color: #32a86b;
+  color: #0c211d;
 }
 
 body {
-    background-color: burlywood;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: burlywood;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
+.welcome {
+  text-align: center;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-template-columns: 4;
+  grid-template-rows: auto; */
+  gap: 10px;
 }
 div {
-    padding: 10px;
-    display: grid;
+  padding: 10px;
+  /* display: grid; */
 }
 
 .book-tile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-/* h4, p {
-    display: grid;
-    grid-column: 2;
-} */
 
 .cover {
-    max-width: 200rem;
+  max-width: 200rem;
 }
 
 footer {
-    height: 10vh;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 10px;
-    margin: 5px;
+  /* height: 10vh; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 5px;
 }
