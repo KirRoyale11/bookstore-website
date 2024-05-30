@@ -65,6 +65,17 @@ div {
   max-width: 200rem;
 }
 
+form {
+  width: 75%;
+  align-items: center;
+}
+
+.submit-button {
+  align-items: center;
+  background-color:blanchedalmond;
+  width: 8rem;
+}
+
 footer {
   /* height: 10vh; */
   display: flex;
