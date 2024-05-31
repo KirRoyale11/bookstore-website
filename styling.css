@@ -1,9 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header {
   display: flex;
   background-color: #32a86b;
@@ -32,6 +26,12 @@ body a:active {
 }
 body a:visited {
   color: slategrey;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .grid-container {

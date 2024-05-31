@@ -1,4 +1,6 @@
 @import "./variables";
+@import "./headerstyle";
+@import "./bodystyle";
 
 * {
   padding: 0;
@@ -6,35 +8,9 @@
   box-sizing: border-box;
 }
 
-header {
-  display: flex;
-  background-color: $primaryColor;
-  color: $secondaryColor;
-  justify-content: center;
-  margin: 15px 0px;
-  padding: 10px;
-  font-size: 50px;
-  font-weight: 200;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: $bodyColor;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  a {
-    color: $secondaryColor;
-    &:hover {
-      color: black;
-    }
-    &:active {
-      color: $primaryColor;
-    }
-    &:visited {
-      color: $linkVisited;
-    }
-  }
-}
+
+
 
 // .grid-container {
 //   height: 100vh;

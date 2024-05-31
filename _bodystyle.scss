@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $bodyColor;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    a {
+      color: $secondaryColor;
+      &:hover {
+        color: black;
+      }
+      &:active {
+        color: $primaryColor;
+      }
+      &:visited {
+        color: $linkVisited;
+      }
+    }
+  }
