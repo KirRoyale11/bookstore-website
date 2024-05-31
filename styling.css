@@ -1,1 +1,108 @@
-/*# sourceMappingURL=styling.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: #32a86b;
+  color: #0c211d;
+  justify-content: center;
+  margin: 15px 0px;
+  padding: 10px;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body a {
+  color: #0c211d;
+}
+body a:hover {
+  color: black;
+}
+body a:active {
+  color: #32a86b;
+}
+body a:visited {
+  color: slategrey;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+div {
+  margin: 5px;
+  padding: 10px;
+}
+
+.book-tile {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  max-width: 200rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.submit-button {
+  align-items: center;
+  background-color: blanchedalmond;
+  width: 8rem;
+}
+.submit-button:hover {
+  background-color: navajowhite;
+}
+.submit-button:active {
+  background-color: #32a86b;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  color: #0c211d;
+}
+
+#footer-content {
+  margin: 5px;
+}
+
+@media (width <= 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styling.css.map */

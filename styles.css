@@ -1,22 +1,13 @@
-@media (width <= 600px) {
-    * {
-      display: flex;
-      flex-direction:column;
-    }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-
-
-  .grid-container {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+.grid-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -36,16 +27,12 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.welcome {
-  text-align: center;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* grid-template-columns: 4;
-  grid-template-rows: auto; */
+  grid-template-columns: 4;
+  grid-template-rows: auto;
   gap: 10px;
 }
 div {
@@ -72,7 +59,7 @@ form {
 
 .submit-button {
   align-items: center;
-  background-color:blanchedalmond;
+  background-color: blanchedalmond;
   width: 8rem;
 }
 
@@ -84,4 +71,11 @@ footer {
   align-items: flex-end;
   gap: 10px;
   margin: 5px;
+}
+
+@media (width <= 600px) {
+  * {
+    display: flex;
+    flex-direction: column;
+  }
 }
