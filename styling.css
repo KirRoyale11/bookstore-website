@@ -28,6 +28,19 @@ body a:visited {
   color: slategrey;
 }
 
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  color: #0c211d;
+}
+
+#footer-content {
+  margin: 5px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -80,19 +93,6 @@ form {
 }
 .submit-button:active {
   background-color: #32a86b;
-}
-
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 10px;
-  color: #0c211d;
-}
-
-#footer-content {
-  margin: 5px;
 }
 
 @media (width <= 700px) {

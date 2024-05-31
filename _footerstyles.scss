@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    color: $secondaryColor;
+  }
+  
+  #footer-content {
+    margin: 5px;
+  }

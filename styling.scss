@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./headerstyle";
 @import "./bodystyle";
+@import "./footerstyles";
 
 * {
   padding: 0;
@@ -8,15 +9,6 @@
   box-sizing: border-box;
 }
 
-
-
-
-
-// .grid-container {
-//   height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .grid-container {
   display: grid;
@@ -69,31 +61,7 @@ form {
   }
 }
 
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 10px;
-  color: $secondaryColor;
 
-  //   a {
-  //     color: $secondaryColor;
-  //     &:hover {
-  //       color: black;
-  //     }
-  //     &:active {
-  //       color: $primaryColor;
-  //     }
-  //     &:visited {
-  //       color: $linkVisited;
-  //     }
-  //   }
-}
-
-#footer-content {
-  margin: 5px;
-}
 
 @media (width <= 700px) {
   body {
