@@ -1,9 +1,4 @@
-$primaryColor: #32a86b;
-$secondaryColor: #0c211d;
-$bodyColor: burlywood;
-$primaryButton: blanchedalmond;
-$hoverButton: navajowhite;
-$linkVisited: slategrey;
+@import "./variables";
 
 * {
   padding: 0;
